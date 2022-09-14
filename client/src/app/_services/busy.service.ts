@@ -12,9 +12,8 @@ export class BusyService {
   busy() {
     this.busyRequestCount++;
     this.spinnerService.show(undefined, {
-      type: 'ball-circus',
       size: 'large',
-      bdColor: 'black',
+      bdColor: 'rgba(0,0,0,0.7)',
       color: 'white'
     }); 
   }
