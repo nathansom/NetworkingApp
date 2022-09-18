@@ -27,7 +27,7 @@
 
       <div class="dropdown" *ngIf="(accountService.currentUser$ | async) as user" dropdown>
         <button id="button-animated" dropdownToggle class="btn btn-primary dropdown-toggle">
-          <img class="mx-2" src="{{user.photoUrl}}" alt="{{user.username}}">
+          <img class="mx-2" src="{{user.photoUrl || './assets/media/user.webp'}}" alt="{{user.username}}">
           <span>Welcome, {{user.username | titlecase }}!</span>
         </button>
         <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu" role="menu">

@@ -14,8 +14,8 @@ namespace API.Data
 
         public UserRepository(DataContext context, IMapper mapper)
         {
-            _context = context;
             _mapper = mapper;
+            _context = context;
         }
 
         public async Task<MemberDto> GetMemberAsync(string username)
