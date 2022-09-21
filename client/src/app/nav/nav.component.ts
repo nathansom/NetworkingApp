@@ -34,7 +34,7 @@ export class NavComponent implements OnInit {
       next: (response:any) => {
         if (response !== null) {
           const user = response;
-          this.toastr.success(`Welcome back, ${user?.username}!`);
+          this.toastr.success(`Welcome back, ${user.knownAs}!`);
         }
         this.router.navigateByUrl('/members')
       },
